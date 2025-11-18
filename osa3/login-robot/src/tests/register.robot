@@ -17,3 +17,7 @@ Register With Already Taken Username And Valid Password
 Register With Too Short Username And Valid Password
     Input Credentials    ab    salasana1234    
     Output Should Contain    Username is too short
+
+Register With Enough Long But Invalid Username And Valid Password
+    Input Credentials    källe1    salasana1234
+    Output Should Contain    Username must consist of only a-z characters
