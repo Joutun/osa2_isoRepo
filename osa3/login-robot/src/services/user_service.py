@@ -36,5 +36,10 @@ class UserService:
     def validate(self, username, password):
         if not username or not password:
             raise UserInputError("Username and password are required")
+        
+        if len(username) < 3:
+            raise UserInputError("Username is too short")
+        if not username.isalpha() or not username.islower():
+            raise UserInputError("Username must consist of only a-z characters")
 
         # toteuta loput tarkastukset tänne ja nosta virhe virhetilanteissa
