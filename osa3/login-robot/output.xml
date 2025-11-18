@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.13.7 on win32)" generated="20251118 07:51:41.248" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.13.7 on win32)" generated="20251118 07:55:11.317" rpa="false" schemaversion="4">
 <suite id="s1" name="Tests" source="C:\projectsGit\gitKurssit\osa2_isoRepo\osa3\login-robot\src\tests">
 <suite id="s1-s1" name="Login" source="C:\projectsGit\gitKurssit\osa2_isoRepo\osa3\login-robot\src\tests\login.robot">
 <test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
@@ -7,129 +7,129 @@
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20251118 07:51:41.295" endtime="20251118 07:51:41.295"/>
+<status status="PASS" starttime="20251118 07:55:11.352" endtime="20251118 07:55:11.352"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20251118 07:51:41.296" endtime="20251118 07:51:41.296"/>
+<status status="PASS" starttime="20251118 07:55:11.352" endtime="20251118 07:55:11.352"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.295" endtime="20251118 07:51:41.296"/>
+<status status="PASS" starttime="20251118 07:55:11.352" endtime="20251118 07:55:11.352"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.295" endtime="20251118 07:51:41.296"/>
+<status status="PASS" starttime="20251118 07:55:11.351" endtime="20251118 07:55:11.352"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>kalle123</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20251118 07:51:41.296" endtime="20251118 07:51:41.296"/>
+<status status="PASS" starttime="20251118 07:55:11.353" endtime="20251118 07:55:11.353"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20251118 07:51:41.296" endtime="20251118 07:51:41.296"/>
+<status status="PASS" starttime="20251118 07:55:11.353" endtime="20251118 07:55:11.353"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20251118 07:51:41.297" endtime="20251118 07:51:41.297"/>
+<status status="PASS" starttime="20251118 07:55:11.353" endtime="20251118 07:55:11.353"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.296" endtime="20251118 07:51:41.297"/>
+<status status="PASS" starttime="20251118 07:55:11.352" endtime="20251118 07:55:11.353"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Logged in</arg>
-<status status="PASS" starttime="20251118 07:51:41.297" endtime="20251118 07:51:41.297"/>
+<status status="PASS" starttime="20251118 07:55:11.353" endtime="20251118 07:55:11.353"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.295" endtime="20251118 07:51:41.297"/>
+<status status="PASS" starttime="20251118 07:55:11.351" endtime="20251118 07:55:11.353"/>
 </test>
 <test id="s1-s1-t2" name="Login With Incorrect Password" line="10">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20251118 07:51:41.299" endtime="20251118 07:51:41.299"/>
+<status status="PASS" starttime="20251118 07:55:11.355" endtime="20251118 07:55:11.355"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20251118 07:51:41.300" endtime="20251118 07:51:41.300"/>
+<status status="PASS" starttime="20251118 07:55:11.355" endtime="20251118 07:55:11.355"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.299" endtime="20251118 07:51:41.300"/>
+<status status="PASS" starttime="20251118 07:55:11.355" endtime="20251118 07:55:11.355"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.299" endtime="20251118 07:51:41.300"/>
+<status status="PASS" starttime="20251118 07:55:11.354" endtime="20251118 07:55:11.355"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>vaara</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20251118 07:51:41.300" endtime="20251118 07:51:41.300"/>
+<status status="PASS" starttime="20251118 07:55:11.355" endtime="20251118 07:55:11.356"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20251118 07:51:41.300" endtime="20251118 07:51:41.300"/>
+<status status="PASS" starttime="20251118 07:55:11.356" endtime="20251118 07:55:11.356"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20251118 07:51:41.300" endtime="20251118 07:51:41.300"/>
+<status status="PASS" starttime="20251118 07:55:11.356" endtime="20251118 07:55:11.356"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.300" endtime="20251118 07:51:41.300"/>
+<status status="PASS" starttime="20251118 07:55:11.355" endtime="20251118 07:55:11.356"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20251118 07:51:41.301" endtime="20251118 07:51:41.301"/>
+<status status="PASS" starttime="20251118 07:55:11.356" endtime="20251118 07:55:11.356"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.298" endtime="20251118 07:51:41.301"/>
+<status status="PASS" starttime="20251118 07:55:11.354" endtime="20251118 07:55:11.356"/>
 </test>
 <test id="s1-s1-t3" name="Login With Nonexistent Username" line="14">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20251118 07:51:41.302" endtime="20251118 07:51:41.302"/>
+<status status="PASS" starttime="20251118 07:55:11.357" endtime="20251118 07:55:11.358"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20251118 07:51:41.302" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.358" endtime="20251118 07:55:11.358"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.302" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.358" endtime="20251118 07:55:11.358"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.302" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.357" endtime="20251118 07:55:11.358"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>pekka</arg>
 <arg>pekka123</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20251118 07:51:41.303" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.358" endtime="20251118 07:55:11.358"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20251118 07:51:41.303" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.358" endtime="20251118 07:55:11.358"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20251118 07:51:41.303" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.358" endtime="20251118 07:55:11.358"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.303" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.358" endtime="20251118 07:55:11.358"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20251118 07:51:41.303" endtime="20251118 07:51:41.303"/>
+<status status="PASS" starttime="20251118 07:55:11.359" endtime="20251118 07:55:11.359"/>
 </kw>
-<status status="PASS" starttime="20251118 07:51:41.302" endtime="20251118 07:51:41.304"/>
+<status status="PASS" starttime="20251118 07:55:11.357" endtime="20251118 07:55:11.359"/>
 </test>
-<status status="PASS" starttime="20251118 07:51:41.273" endtime="20251118 07:51:41.305"/>
+<status status="PASS" starttime="20251118 07:55:11.342" endtime="20251118 07:55:11.360"/>
 </suite>
 <suite id="s1-s2" name="Register" source="C:\projectsGit\gitKurssit\osa2_isoRepo\osa3\login-robot\src\tests\register.robot">
 <test id="s1-s2-t1" name="Register With Valid Username And Password" line="6">
 <kw name="Input New Command" type="SETUP">
-<msg timestamp="20251118 07:51:41.312" level="FAIL">No keyword with name 'Input New Command' found.</msg>
-<status status="FAIL" starttime="20251118 07:51:41.312" endtime="20251118 07:51:41.312"/>
+<msg timestamp="20251118 07:55:11.365" level="FAIL">No keyword with name 'Input New Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20251118 07:55:11.365" endtime="20251118 07:55:11.365"/>
 </kw>
-<status status="FAIL" starttime="20251118 07:51:41.309" endtime="20251118 07:51:41.312">Setup failed:
-No keyword with name 'Input New Command' found.</status>
+<status status="FAIL" starttime="20251118 07:55:11.363" endtime="20251118 07:55:11.365">Setup failed:
+No keyword with name 'Input New Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</status>
 </test>
-<status status="FAIL" starttime="20251118 07:51:41.306" endtime="20251118 07:51:41.315"/>
+<status status="FAIL" starttime="20251118 07:55:11.361" endtime="20251118 07:55:11.366"/>
 </suite>
-<status status="FAIL" starttime="20251118 07:51:41.248" endtime="20251118 07:51:41.316"/>
+<status status="FAIL" starttime="20251118 07:55:11.318" endtime="20251118 07:55:11.369"/>
 </suite>
 <statistics>
 <total>
@@ -144,6 +144,5 @@ No keyword with name 'Input New Command' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20251118 07:51:41.308" level="ERROR">Error in file 'C:\projectsGit\gitKurssit\osa2_isoRepo\osa3\login-robot\src\tests\register.robot' on line 2: Resource file '..\resource.robot' does not exist.</msg>
 </errors>
 </robot>

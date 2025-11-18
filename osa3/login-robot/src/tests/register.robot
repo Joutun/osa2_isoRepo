@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../resource.robot
+Resource          resource.robot
 Test Setup        Input New Command
 
 *** Test Cases ***
