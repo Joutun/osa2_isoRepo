@@ -1,5 +1,5 @@
 from entities.user import User
-
+import re
 
 class UserInputError(Exception):
     pass
@@ -27,6 +27,10 @@ class UserService:
     def create_user(self, username, password):
         self.validate(username, password)
 
+        # tarkastetaan onko jo käyttäjä ennestään olemassa
+        if self._user_repository.find_by_username(username):
+            raise UserInputError("User with username " + username + " already exists")
+
         user = self._user_repository.create(
             User(username, password)
         )
@@ -37,9 +41,20 @@ class UserService:
         if not username or not password:
             raise UserInputError("Username and password are required")
         
+        # KÄYTTÄJÄTUNNUS TARKASTUS
         if len(username) < 3:
             raise UserInputError("Username is too short")
-        if not username.isalpha() or not username.islower():
+        # islower tarkastaa että on pienet kirjaimet
+        # if not username.isalpha() or not username.islower():
+        #     raise UserInputError("Username must consist of only a-z characters")
+        # toka ratkaisu enemmän ohjeiden mukainen.
+        if re.match("^[a-z]+$", username) is None:
             raise UserInputError("Username must consist of only a-z characters")
+        
+        ## SALASANAN TARKASTAMINEN
+        if len(password) < 8:
+            raise UserInputError("Password must be at least 8 characters long")
 
-        # toteuta loput tarkastukset tänne ja nosta virhe virhetilanteissa
+        # isalpha tarkastaa että on aakkosia
+        if password.isalpha():
+            raise UserInputError("Password must contain at least one number or special character")
