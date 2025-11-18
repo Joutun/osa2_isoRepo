@@ -13,3 +13,7 @@ Register With Already Taken Username And Valid Password
     Input New Command
     Input Credentials    kayttaja    toinen1234    
     Output Should Contain    User with username kayttaja already exists
+
+Register With Too Short Username And Valid Password
+    Input Credentials    ab    salasana1234    
+    Output Should Contain    Username is too short
