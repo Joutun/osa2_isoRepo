@@ -25,3 +25,7 @@ Register With Enough Long But Invalid Username And Valid Password
 Register With Valid Username And Too Short Password
     Input Credentials  kalle  12345a
     Output Should Contain    Password must be at least 8 characters long
+
+Register With Valid Username And Long Enough Password Containing Only Letters
+    Input Credentials  antti  longEnough
+    Output Should Contain    Password must contain at least one number or special character
